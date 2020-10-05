@@ -1,0 +1,20 @@
+Plante_assignment5:
+total 232
+-rwxr-xr-x. 1 myid 19048 Jul 26 16:09 main
+-rw-r--r--. 1 myid  1853 Jul 26 00:19 main.cpp
+-rw-r--r--. 1 myid  1575 Jul 26 00:15 main.cpp~
+-rw-r--r--. 1 myid  8232 Jul 26 16:09 main.o
+-rw-r--r--. 1 myid   180 Jul 26 14:49 Makefile
+-rw-r--r--. 1 myid   275 Jul 26 14:47 Makefile~
+-rw-r--r--. 1 myid 48890 Jul 23 20:38 ordered.txt
+-rw-r--r--. 1 myid 48890 Jul 23 20:38 random.txt
+-rw-r--r--. 1 myid   259 Jul 26 16:08 Readme.txt
+-rw-r--r--. 1 myid   158 Jul 26 16:06 Readme.txt~
+-rw-r--r--. 1 myid     0 Jul 26 16:13 rec26159
+-rw-r--r--. 1 myid 48890 Jul 23 20:41 reverse.txt
+-rw-r--r--. 1 myid  4248 Jul 26 12:45 sorting.cpp
+-rw-r--r--. 1 myid  4279 Jul 26 12:35 sorting.cpp~
+-rw-r--r--. 1 myid   703 Jul 26 00:12 sorting.h
+-rw-r--r--. 1 myid   682 Jul 26 00:05 sorting.h~
+-rw-r--r--. 1 myid  6048 Jul 26 16:09 sorting.o
+/home/myid/arp75723/Plante_assignment5:/home/myid/csci-2720

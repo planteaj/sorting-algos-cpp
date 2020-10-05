@@ -1,0 +1,87 @@
+#include <iostream>
+#include <fstream>
+#include "sorting.h"
+
+using namespace std;
+
+
+
+int main(int argc, char ** argv) {
+  if(argc != 2)
+    {
+      cout << "Wrong command-line input" << endl;
+      return -1;
+    }
+  fstream fs;
+  fs.open(argv[1]);
+
+  int streamInt;
+  int values[10000];
+  int count = 0;
+  sorting st;
+  while(fs >> streamInt)
+    {
+      values[count] = streamInt;
+          count++;
+    }
+  fs.close();
+  cout << argv[0] << " " << argv[1] << " Commands:" << endl;
+  cout << "selection-sort (s)    merge-sort (m)    heap-sort (h)    quick-sort-fp (q)    quick-sort-rp (r)" << endl;
+ 
+    cout << "Enter the algorithm:  ";
+    char inp;
+    cin >> inp;
+
+    if(inp == 's')
+      {
+	st.SelectionSort(values, 10000);
+	for(int i = 0; i < 10000; i++)
+	  {
+	    cout << values[i] << " ";
+	  }
+	cout << "\n";
+	cout << "#Selection-sort comparisons: " << st.returnComp() << endl;
+	
+      }
+    else if(inp == 'm')
+      {
+	st.MergeSort(values, 0, 10000);
+	for(int i = 0; i < 10000; i++)
+	  {
+	    cout << values[i] << " ";
+	  }
+	cout << "\n";
+	cout << "     #Merge-sort comparisons: " << st.returnComp() << endl;
+      }
+    else if(inp == 'h')
+      {
+	st.HeapSort(values, 10000);
+	for(int i = 0; i < 10000; i++)
+	  {
+	    cout << values[i] << " ";
+	  }
+	cout << "\n";
+	cout << "     #Heap-sort comparisons: " << st.returnComp() << endl;
+      }
+    else if(inp == 'q')
+      {
+	st.QuickSort(values, 0, 10000, true);
+	for(int i = 0; i < 10000; i++)
+	  {
+	    cout << values[i] << " ";
+	  }
+	cout << "\n";
+	cout << "     #Quick-sort-fp comparisons: " << st.returnComp() << endl;
+      }
+    else if(inp == 'r')
+      {
+	bool t = false;
+	st.QuickSort(values, 0, 10000, t);
+	for(int i = 0; i < 10000; i++)
+	  {
+	    cout << values[i] << " ";
+	  }
+	cout << "\n";
+	cout << "     #Quick-sort-rp comparisons: " << st.returnComp() << endl;
+      }
+ }
